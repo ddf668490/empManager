@@ -31,10 +31,16 @@ public class EmpController {
 		model.addAttribute("pageInfo",pageInfo);
 		return "emp";
 	}
+	
 	@RequestMapping(value="/list",method=RequestMethod.GET)
 	public String tolist(){
 		return "list";
 	}
+	/**
+	 * 分页查询员工信息
+	 * @param pn
+	 * @return
+	 */
 	@RequestMapping(value="/list",method=RequestMethod.POST)
 	@ResponseBody
 	public Msg list(@RequestParam(value="pn" ,defaultValue="1")Integer pn){
@@ -43,13 +49,18 @@ public class EmpController {
 		PageInfo<Emp> pageInfo = new PageInfo<>(emps,5);
 		return Msg.success().add("page", pageInfo);
 	}
+	/**
+	 * 添加员工
+	 * @param emp
+	 * @return
+	 */
 	@RequestMapping(value="/addEmp",method=RequestMethod.POST)
 	@ResponseBody
 	public Msg addEmp(Emp emp){
 		return Msg.success().add("i", empService.insertSelective(emp));
 	}
 	/**
-	 * 获取员工修改信息
+	 * 通过id获取待员工修改信息
 	 * @param emp_id
 	 * @return
 	 */
@@ -58,7 +69,11 @@ public class EmpController {
 	public Msg editEmp(Integer emp_id){
 		return Msg.success().add("emp", empService.selectByPrimaryKey(emp_id)).add("depts", deptService.selectByExample());
 	}
-	
+	/**
+	 * 修改员工信息
+	 * @param emp
+	 * @return
+	 */
 	@RequestMapping(value="/updateEmp/{empId}",method=RequestMethod.PUT)
 	@ResponseBody
 	public Msg updateEmp(Emp emp){

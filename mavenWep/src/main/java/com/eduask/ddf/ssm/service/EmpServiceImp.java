@@ -16,6 +16,7 @@ public class EmpServiceImp implements EmpService {
 	@Override
 	public List<Emp> selectEmpWithDept() {
 		EmpExample example = new EmpExample();
+		//根据员工id号排序
 		example.setOrderByClause("emp_id");
 		// TODO Auto-generated method stub
 		return empMapper.selectByExampleWithDept(example);

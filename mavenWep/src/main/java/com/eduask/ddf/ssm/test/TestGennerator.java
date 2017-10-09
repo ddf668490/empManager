@@ -8,7 +8,11 @@ import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.internal.DefaultShellCallback;
-
+/**
+ * mybatisÄæÏò¹¤³Ì
+ * @author ¶¡µÏ·å
+ *
+ */
 public class TestGennerator {
 	  public static void main(String[] args) throws Exception {
 		  List<String> warnings = new ArrayList<String>();

@@ -1,5 +1,9 @@
 package com.eduask.ddf.ssm.bean;
-
+/**
+ * 
+ * @author 丁迪峰
+ * 员工实体类
+ */
 public class Emp {
     private Integer empId;
 

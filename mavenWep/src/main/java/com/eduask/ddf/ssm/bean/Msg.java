@@ -2,7 +2,11 @@ package com.eduask.ddf.ssm.bean;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * 
+ * @author 丁迪峰
+ * 信息集成类
+ */
 public class Msg {
 	private int code;//编码成功100 失败200
 	private String info;//信息

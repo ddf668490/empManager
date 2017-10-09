@@ -4,6 +4,7 @@
   <artifactId>mavenWep</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 <dependency>
@@ -99,4 +100,5 @@
     <version>2.8.9</version>
 </dependency>
   </dependencies>
+
 </project>

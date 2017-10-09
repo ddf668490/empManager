@@ -19,7 +19,8 @@
 <script type="text/javascript" src='<c:url value="static/js/emp.js" />'></script>
 </head>
 <body>
-<!-- 员工修改页面 -->
+
+	<!-- 员工修改页面 -->
 	<div class="modal fade" tabindex="-1" role="dialog" id="editModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -42,19 +43,18 @@
 							<label for="inputEmail3" class="col-sm-2 control-label">邮箱：</label>
 							<div class="col-sm-10">
 								<input type="email" class="form-control" id="inputEmail3"
-									placeholder="Email" name="email">
-									<span id="helpBlock2" class="help-block"></span>
+									placeholder="Email" name="email"> <span id="helpBlock2"
+									class="help-block"></span>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">性别：</label>
 							<div class="col-sm-10">
 								<label class="radio-inline"> <input type="radio"
-									 id="inputGender3" value="M" name="gender" checked="checked">
+									id="inputGender3" value="M" name="gender" checked="checked">
 									男
 								</label> <label class="radio-inline"> <input type="radio"
-									 id="inputGender3" value="F" name="gender">
-									女
+									id="inputGender3" value="F" name="gender"> 女
 								</label>
 							</div>
 						</div>
@@ -76,7 +76,8 @@
 		</div>
 		<!-- /.modal-dialog -->
 	</div>
-<!-- 	员工添加页面 -->
+
+	<!-- 	员工添加页面 -->
 	<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -93,27 +94,26 @@
 							<label for="inputName3" class="col-sm-2 control-label">姓名：</label>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" id="inputName3"
-									placeholder="Name" name="empName">
-									<span id="helpBlock2" class="help-block"></span>
+									placeholder="Name" name="empName"> <span
+									id="helpBlock2" class="help-block"></span>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">邮箱：</label>
 							<div class="col-sm-10">
 								<input type="email" class="form-control" id="inputEmail3"
-									placeholder="Email" name="email">
-									<span id="helpBlock2" class="help-block"></span>
+									placeholder="Email" name="email"> <span id="helpBlock2"
+									class="help-block"></span>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">性别：</label>
 							<div class="col-sm-10">
 								<label class="radio-inline"> <input type="radio"
-									 id="inputGender3" value="M" name="gender" checked="checked">
+									id="inputGender3" value="M" name="gender" checked="checked">
 									男
 								</label> <label class="radio-inline"> <input type="radio"
-									 id="inputGender3" value="F" name="gender">
-									女
+									id="inputGender3" value="F" name="gender"> 女
 								</label>
 							</div>
 						</div>
@@ -133,7 +133,8 @@
 			</div>
 		</div>
 	</div>
-<!-- 	员工显示页面 -->
+
+	<!-- 	员工显示页面 -->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
@@ -151,7 +152,7 @@
 				<table class="table table-hover" id="empTable">
 					<thead>
 						<tr>
-							<th><input type="checkbox" id = "selectAll"/></th>
+							<th><input type="checkbox" id="selectAll" /></th>
 							<th>#</th>
 							<th>姓名</th>
 							<th>邮箱</th>

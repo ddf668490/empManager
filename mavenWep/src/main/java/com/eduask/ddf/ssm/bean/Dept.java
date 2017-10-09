@@ -1,5 +1,8 @@
 package com.eduask.ddf.ssm.bean;
-
+/**
+ * @author 丁迪峰
+ * 部门实体类 
+ */
 public class Dept {
     private Integer did;
 

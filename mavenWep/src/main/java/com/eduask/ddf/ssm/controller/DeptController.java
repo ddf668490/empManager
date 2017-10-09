@@ -16,7 +16,10 @@ import com.eduask.ddf.ssm.service.DeptService;
 public class DeptController {
 	@Autowired
 	private DeptService deptService;
-
+	/**
+	 * 获取部门信息
+	 * @return 
+	 */
 	@RequestMapping(value="/listDept",method=RequestMethod.POST)
 	@ResponseBody
 	public Msg listDept(){
